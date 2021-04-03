@@ -8,7 +8,7 @@ describe "App" do
 
       visit "/food_form"
 
-      fill_in("name", with: agent)
+     
       fill_in("favorite_food", with: food)
 
       expect(find_field('name').value).to eq agent
